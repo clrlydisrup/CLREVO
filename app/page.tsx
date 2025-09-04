@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import SmartCityTime from "@/components/smart-city-time"
+import InteractiveEVMap from "@/components/interactive-ev-map"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -132,6 +133,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive EV Map Section */}
+      <InteractiveEVMap />
 
       {/* One Grid Section */}
       <section className="px-4 py-20 bg-gray-50">
