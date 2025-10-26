@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import SmartCityTime from "@/components/smart-city-time"
 import Link from "next/link"
-import { Suspense } from "react"
 
 export default function HomePage() {
   return (
@@ -43,9 +42,7 @@ export default function HomePage() {
 
       <div className="bg-black border-b border-gray-800 py-6">
         <div className="container mx-auto max-w-7xl px-4 flex justify-end">
-          <Suspense fallback={<div className="text-white text-sm">Loading...</div>}>
-            <SmartCityTime />
-          </Suspense>
+          <SmartCityTime />
         </div>
       </div>
 
@@ -230,7 +227,7 @@ export default function HomePage() {
               Coming Soon to Your <span className="text-cyan-400">City</span>
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <Card className="border border-gray-800 bg-gray-900/50 backdrop-blur hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
                 <CardContent className="p-10 text-center space-y-4">
                   <div className="w-20 h-20 mx-auto bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
@@ -262,6 +259,23 @@ export default function HomePage() {
                   </div>
                   <h4 className="text-3xl font-heading font-bold text-white">Bay Area</h4>
                   <p className="text-lg text-gray-400">Oakland & West Oakland</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-gray-800 bg-gray-900/50 backdrop-blur hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
+                <CardContent className="p-10 text-center space-y-4">
+                  <div className="w-20 h-20 mx-auto bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
+                    <svg className="w-10 h-10 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                  </div>
+                  <h4 className="text-3xl font-heading font-bold text-white">Atlanta</h4>
+                  <p className="text-lg text-gray-400">Atlanta, GA</p>
                 </CardContent>
               </Card>
             </div>
