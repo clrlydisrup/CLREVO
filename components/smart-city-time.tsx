@@ -110,10 +110,10 @@ export default function SmartCityTime() {
     <div className="flex flex-col items-end space-y-1 text-right">
       <div className="flex items-center space-x-2">
         <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-        <span className="text-sm font-mono text-gray-600 uppercase tracking-wider">{location}</span>
+        <span className="text-sm font-mono text-white uppercase tracking-wider">{location}</span>
       </div>
-      <div className="font-mono text-lg font-bold text-gray-900">{formatTime(currentTime)}</div>
-      <div className="font-mono text-sm text-gray-500 uppercase tracking-wide">{formatDate(currentTime)}</div>
+      <div className="font-mono text-lg font-bold text-white">{formatTime(currentTime)}</div>
+      <div className="font-mono text-sm text-gray-300 uppercase tracking-wide">{formatDate(currentTime)}</div>
     </div>
   )
 }
