@@ -19,23 +19,6 @@ export default function HomePage() {
               className="w-full h-auto"
               priority
             />
-
-            {/* CTA Button Overlay */}
-            <div className="absolute bottom-12 left-8 md:left-16 lg:left-24">
-              <Button
-                size="lg"
-                className="bg-cyan-500 hover:bg-cyan-400 text-black px-12 py-6 text-xl font-heading font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl shadow-cyan-500/50"
-                asChild
-              >
-                <Link
-                  href="https://form.maildroppa.com/?id=c6089241-bfbf-450d-ac64-416d02409579"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Join the Waitlist
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
